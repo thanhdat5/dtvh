@@ -1,0 +1,60 @@
+@import "./../../assets/styles/variables.scss";
+
+.tng-tabs {
+  text-align: center;
+  .tng-tabs-inner {
+    display: inline-flex;
+    align-items: center;
+    background: $secondary-color;
+    border: 1px solid $primary-color;
+    border-radius: 45px;
+    position: relative;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    .placeholder {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 47px;
+      transition: all ease-in-out 0.3s;
+      background-color: $primary-color;
+      height: 100%;
+    }
+    .tng-tab {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+      color: $primary-color;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 217px;
+      max-width: 50%;
+      border: 0;
+      outline: 0;
+      transition: all ease-in-out 0.3s;
+      background-color: transparent;
+      border-radius: 47px;
+      padding: 19px 31px;
+      cursor: pointer;
+      position: relative;
+
+      @media (max-width: 399px) {
+        font-size: 20px;
+        line-height: 1;
+        width: auto;
+        max-width: 80%;
+        text-align: center;
+        padding: 15px 28px;
+        &:first-child{
+          flex: 1;
+        }
+      }
+      &.selected {
+        color: $secondary-color;
+      }
+    }
+  }
+}

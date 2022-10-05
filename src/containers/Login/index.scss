@@ -1,0 +1,78 @@
+@import "./../../assets/styles/variables.scss";
+.tng-login {
+  @media (min-height: 789px) {
+    overflow: hidden;
+    min-height: calc(100vh - 200px);
+  }
+  padding: 20px 0;
+  @media (max-width: 991px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  min-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .tng-login-inner {
+    width: 55.62%;
+    max-width: 100%;
+    text-align: center;
+    @media (min-width: 1440px) {
+      width: 801px;
+    }
+    @media (max-width: 991px) {
+      width: 90%;
+    }
+    @media (max-width: 767px) {
+      width: 98%;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 82px;
+      text-transform: uppercase;
+      color: $text-color;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 1;
+      }
+    }
+    .tng-tabs {
+      margin-bottom: 50px;
+    }
+    .tbg-form-control {
+      margin-bottom: 30px;
+    }
+    .tng-login-message {
+      height: 50px;
+      text-align: left;
+      span {
+        font-size: 20px;
+        font-weight: 400;
+        color: red;
+        margin-top: -10px;
+        display: block;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .tng-loading-logo {
+    .tng-logo {
+      text-align: center;
+      img {
+        width: 290px;
+        max-width: 100%;
+      }
+      @media (max-width: 767px) {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

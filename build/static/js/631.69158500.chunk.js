@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktng_dtvh=self.webpackChunktng_dtvh||[]).push([[631],{1631:function(t,e,n){n.r(e),n.d(e,{default:function(){return a}});var u=n(2791),s=n(184),a=function(t){var e=t.history;return(0,u.useEffect)((function(){var t=localStorage.getItem("user-profile"),n=JSON.parse(t);0===n.union||null===n.union?e.push("/select-team"):e.push("/start-game-flow")}),[]),(0,s.jsx)("div",{className:"tng-main"})}}}]);
+//# sourceMappingURL=631.69158500.chunk.js.map

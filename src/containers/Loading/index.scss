@@ -1,0 +1,57 @@
+.tng-loading {
+  padding: 10.64vh 0 0;
+  position: relative;
+  min-height: calc(100vh - 10.64vh);
+  overflow: hidden;
+  .tng-loading-logo {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    img {
+      width: auto;
+      max-height: 52.53vh;
+    }
+  }
+  .tng-loading-el {
+    position: absolute;
+    &.tng-loading-el-1 {
+      width: 19.38%;
+      top: 4.92%;
+      left: 3.58%;
+      transform-origin: top left;
+    }
+    &.tng-loading-el-2 {
+      width: 30.2%;
+      top: 5.22%;
+      right: 0;
+      transform-origin: top right;
+    }
+    &.tng-loading-el-3 {
+      width: 21.28%;
+      bottom: 5.43%;
+      left: 4.23%;
+      @media (max-width: 767px) {
+        bottom: 40%;
+      }
+      transform-origin: bottom left;
+    }
+    &.tng-loading-el-4 {
+      width: 26.06%;
+      bottom: 0;
+      @media (max-width: 767px) {
+        bottom: 40%;
+      }
+      left: 36.21%;
+      transform-origin: bottom left;
+    }
+    &.tng-loading-el-5 {
+      width: 23.09%;
+      bottom: 1.03%;
+      @media (max-width: 767px) {
+        bottom: 40%;
+      }
+      right: 0;
+      transform-origin: bottom right;
+    }
+  }
+}

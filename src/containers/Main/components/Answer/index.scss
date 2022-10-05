@@ -1,0 +1,94 @@
+@import "./../../../../assets/styles/variables.scss";
+.tng-answer {
+  background: linear-gradient(267.98deg, #dc0000 -7.12%, #e9776f 113.32%);
+  border-radius: 14px;
+  padding: 6px;
+  overflow: hidden;
+  width: calc(50% - 32px - 12px);
+  font-family: "Maven Pro";
+  cursor: pointer;
+  @media (max-width: 1199px) {
+    width: calc(50% - 20px - 12px);
+  }
+  @media (max-width: 991px) {
+    border-radius: 10px;
+    padding: 3px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  .tng-answer-body {
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #29044f;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all ease-in-out 0.3s;
+    text-align: left;
+    font-family: "Maven Pro";
+    height: calc(100% - 16px);
+    @media (max-width: 991px) {
+      border-radius: 8px;
+      padding: 9.5px 15px;
+      height: calc(100% - 19px);
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (max-width: 767px) {
+      padding: 7px 12px;
+      height: calc(100% - 14px);
+    }
+    b {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 35px;
+      color: #ee4037;
+      margin-right: 8px;
+      @media (max-width: 991px) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+  &.correct,
+  &.incorrect {
+    .tng-answer-body {
+      color: #fff;
+      b {
+        color: #ffdb00;
+      }
+    }
+  }
+
+  &.selected {
+    .tng-answer-body {
+      color: #29044f;
+      b {
+        color: #ffdb00;
+      }
+    }
+  }
+
+  &:hover,
+  &.selected {
+    .tng-answer-body {
+      background-color: white;
+    }
+  }
+
+  &.correct {
+    .tng-answer-body {
+      background-color: #19ae00;
+    }
+  }
+  &.incorrect {
+    .tng-answer-body {
+      background-color: #ce9607;
+    }
+  }
+}

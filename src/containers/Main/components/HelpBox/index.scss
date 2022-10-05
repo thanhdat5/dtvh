@@ -1,0 +1,119 @@
+@import "./../../../../assets/styles/variables.scss";
+.tng-help-box {
+  padding: 30px 20px;
+  transform-origin: top right;
+  background: rgba(255, 255, 255, 0.25);
+  border: 3px solid #ee4037;
+  border-right: 0;
+  border-radius: 50px 0 0 50px;
+  button {
+    font-family: "Maven Pro";
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: $text-color;
+    text-align: left;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    &:not(:disabled) {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    &:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+    svg,
+    img {
+      margin-right: 30px;
+      color: #ee4037;
+    }
+  }
+}
+
+.style-5 {
+  .tng-help-box {
+    border-color: #f9b717;
+    button {
+      svg,
+      img {
+        margin-right: 30px;
+        color: #f9b717;
+      }
+    }
+  }
+}
+
+.style-4 {
+  .tng-help-box {
+    border-color: #cb1a72;
+    button {
+      svg,
+      img {
+        margin-right: 30px;
+        color: #cb1a72;
+      }
+    }
+  }
+}
+
+.style-3 {
+  .tng-help-box {
+    border-color: #ee4037;
+    button {
+      svg,
+      img {
+        margin-right: 30px;
+        color: #ee4037;
+      }
+    }
+  }
+}
+
+.style-2 {
+  .tng-help-box {
+    border-color: #54e7ef;
+    button {
+      svg,
+      img {
+        margin-right: 30px;
+        color: #54e7ef;
+      }
+    }
+  }
+}
+
+.style-6 {
+  .tng-help-box {
+    border-color: #54e7ef;
+    button {
+      svg,
+      img {
+        margin-right: 30px;
+        color: #54e7ef;
+      }
+    }
+  }
+}
+
+.style-1 {
+  .tng-help-box {
+    border-color: #f9b717;
+    button {
+      svg,
+      img {
+        margin-right: 30px;
+        color: #f9b717;
+      }
+    }
+  }
+}

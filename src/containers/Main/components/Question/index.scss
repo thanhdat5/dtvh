@@ -1,0 +1,30 @@
+@import "./../../../../assets/styles/variables.scss";
+.tng-question {
+  position: relative;
+  margin-bottom: 34px;
+  background: linear-gradient(267.98deg, #dc0000 -7.12%, #e9776f 113.32%);
+  padding: 6px;
+  border-radius: 37px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 24px;
+  }
+  .tng-question-body {
+    text-align: left;
+    background: $white-color;
+    padding: 30px 25px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 37px;
+    color: #29044f;
+    border-radius: 32px;
+    @media (max-width: 991px) {
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
